@@ -28,5 +28,6 @@ Python Query builder for [Cypher, the graph query language](https://neo4j.com/cy
 #### Init workspace
 
 ```bash
-PIPENV_VENV_IN_PROJECT=1 pipenv --python $(pyenv root)/versions/3.7.0/bin/python;
+PIPENV_VENV_IN_PROJECT=1 pipenv --python $(pyenv root)/versions/3.7.0/bin/python
+pipenv install --dev
 ```
