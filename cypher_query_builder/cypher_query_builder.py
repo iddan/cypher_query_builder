@@ -119,7 +119,7 @@ Projection = Union[
 
 
 class Clause:
-    def __init__(self, val: Union[Node, Path, Tuple[Node, ...]]) -> None:
+    def __init__(self, val):
         raise NotImplementedError()
 
     def create(self, val: Path) -> "Clause":
@@ -131,4 +131,5 @@ class Clause:
 
 
 class match(Clause):
-    pass
+    def __init__(self, val: Union[Node, Path, Tuple[Node, ...]]) -> None:
+        raise NotImplementedError()
